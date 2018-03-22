@@ -1,0 +1,24 @@
+{
+  "bindings": [
+    {
+      "name": "$return",
+      "type": "http",
+      "direction": "out"
+    },
+    {
+      "type": "eventGridTrigger",
+      "name": "EventGridTrigger",
+      "direction": "in"
+    },
+    {
+      "type": "documentDB",
+      "name": "outputDocument",
+      "databaseName": "AppConfigs",
+      "collectionName": "AppConfigs1",
+      "createIfNotExists": true,
+      "connection": "nirsimages_DOCUMENTDB",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
